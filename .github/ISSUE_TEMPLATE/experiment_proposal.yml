@@ -1,0 +1,47 @@
+name: Experiment proposal
+description: Propose a falsifiable Limes research experiment.
+title: "[experiment] "
+labels: ["experiment", "needs-protocol"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: State one falsifiable question.
+    validations:
+      required: true
+  - type: dropdown
+    id: program
+    attributes:
+      label: Program
+      options:
+        - Long-horizon RL
+        - Small-model efficiency
+        - Optimizer research
+        - Benchmark design
+        - AutoResearch
+        - European applied evals
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Protocol sketch
+      description: Name the primary metric, baselines, budget, and selection rule.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Expected artifacts
+      description: List configs, commands, ledgers, reports, or result cards.
+    validations:
+      required: true
+  - type: textarea
+    id: claim_limits
+    attributes:
+      label: Claim limits
+      description: What this experiment will not prove.
+    validations:
+      required: true
+
