@@ -1,0 +1,46 @@
+name: Sanitized extraction task
+description: Route a private research theme into a public, clean experiment.
+title: "[extraction] "
+labels: ["extraction", "needs-sanitization"]
+body:
+  - type: textarea
+    id: theme
+    attributes:
+      label: Sanitized theme
+      description: Describe the theme without private code, logs, secrets, or raw claims.
+    validations:
+      required: true
+  - type: dropdown
+    id: destination
+    attributes:
+      label: Public destination
+      options:
+        - limes-research-programs
+        - limes-autoresearch
+        - limes-nanogpt
+        - limes-parameter-golf
+        - eurobench
+        - model-card-template
+    validations:
+      required: true
+  - type: textarea
+    id: public_artifact
+    attributes:
+      label: Public artifact
+      description: Issue, template, report, result card, adapter, or experiment.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Sanitization checks
+      options:
+        - label: No private source code copied.
+          required: true
+        - label: No raw private logs or result dumps copied.
+          required: true
+        - label: No secrets, tokens, or infrastructure details included.
+          required: true
+        - label: Claims are downgraded to public evidence level.
+          required: true
+
