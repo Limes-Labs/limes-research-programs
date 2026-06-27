@@ -30,6 +30,7 @@ Start with the agenda overview:
 - [Small-model efficiency](docs/programs/small-model-efficiency.md)
 - [Optimizer research](docs/programs/optimizer-research.md)
 - [Benchmark design](docs/programs/benchmark-design.md)
+- [Agentic LLM challenges](docs/programs/agentic-llm-challenges.md)
 - [AutoResearch](docs/programs/autoresearch.md)
 - [European applied evals](docs/programs/european-applied-evals.md)
 
@@ -53,6 +54,8 @@ claims:
 ## Related Public Repositories
 
 - [limes-autoresearch](https://github.com/Limes-Labs/limes-autoresearch)
+- [limes-dataforge](https://github.com/Limes-Labs/limes-dataforge)
+- [limes-kernelforge](https://github.com/Limes-Labs/limes-kernelforge)
 - [limes-nanogpt](https://github.com/Limes-Labs/limes-nanogpt)
 - [limes-parameter-golf](https://github.com/Limes-Labs/limes-parameter-golf)
 - [eurobench](https://github.com/Limes-Labs/eurobench)
@@ -77,4 +80,3 @@ Prefer small, replayable work:
 This repository is an initial public scaffold. It is useful when it creates
 issues, reports, templates, and experiments that other Limes repositories can
 run and review.
-
